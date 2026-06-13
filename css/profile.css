@@ -1,8 +1,3 @@
-/* ================================================
-   profile.css — 프로필 섹션 + 소개글
-   ================================================ */
-
-/* ── Profile ── */
 #profile {
     background: #fff;
 }
@@ -26,8 +21,8 @@
     height: 280px;
     object-fit: cover;
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-hover);
     background: var(--bg-soft);
+    border: 1px solid var(--border);
 }
 
 .profile-photo-placeholder {
@@ -38,10 +33,11 @@
 }
 
 .profile-info h2 {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 6px;
     color: var(--text);
+    letter-spacing: -0.03em;
 }
 
 .profile-info h2 span {
@@ -53,13 +49,14 @@
 
 .profile-badge {
     display: inline-block;
-    background: var(--yellow);
-    color: #1a1a1a;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 7px 16px;
+    background: var(--text);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 14px;
     margin: 12px 0 24px;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
     border-radius: 999px;
 }
 
@@ -74,7 +71,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 15px;
+    font-size: 14px;
     color: var(--text-muted);
 }
 
@@ -89,7 +86,7 @@
 .profile-contact li .icon svg {
     width: 15px;
     height: 15px;
-    stroke: var(--yellow-hover);
+    stroke: var(--text-muted);
 }
 
 .profile-contact li a {
@@ -98,24 +95,24 @@
 }
 
 .profile-contact li a:hover {
-    color: var(--yellow-hover);
+    color: var(--text-muted);
 }
 
-/* ── About Text (profile 내부 통합) ── */
 .about-section {
     margin-top: 56px;
     padding-top: 48px;
-    border-top: 1.5px solid var(--border);
+    border-top: 1px solid var(--border);
 }
 
 .about-catchphrase {
-    font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
     font-weight: 700;
     color: var(--text);
     line-height: 1.45;
     margin-bottom: 28px;
-    border-left: 5px solid var(--yellow);
+    border-left: 4px solid var(--text);
     padding-left: 20px;
+    letter-spacing: -0.02em;
 }
 
 .about-body p {
@@ -126,7 +123,6 @@
     max-width: 720px;
 }
 
-/* ── 반응형 ── */
 @media (max-width: 900px) {
     .profile-grid {
         grid-template-columns: 1fr;

@@ -1,28 +1,13 @@
-/* ================================================
-   contact.css — 연락처 섹션 + 푸터
-   ================================================ */
-
-/* ── Contact ── */
 #contact {
-    background: #1a1a1a;
-    color: #fff;
+    background: var(--bg-soft);
     text-align: center;
 }
 
-#contact .section-heading {
-    color: #fff;
-}
-
-#contact .section-heading::after {
-    background: var(--yellow);
-}
-
 #contact > .container > p {
-    color: rgba(255, 255, 255, 0.55);
+    color: var(--text-muted);
     font-size: 15px;
 }
 
-/* 카드 그리드 */
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -31,45 +16,44 @@
 }
 
 .contact-card {
-    border: 1.5px solid rgba(255, 255, 255, 0.10);
-    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    background: #fff;
     padding: 28px 20px;
     border-radius: var(--radius-lg);
-    transition: transform 0.25s ease, border-color 0.25s ease;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .contact-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--yellow);
+    border-color: var(--text);
+    box-shadow: var(--shadow-hover);
 }
 
 .contact-card h4 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.14em;
+    font-size: 10px;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--yellow);
+    font-weight: 700;
+    color: var(--text-soft);
     margin-bottom: 10px;
 }
 
 .contact-card p,
 .contact-card a {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.60);
+    color: var(--text-muted);
     text-decoration: none;
     line-height: 1.8;
 }
 
 .contact-card a:hover {
-    color: var(--yellow);
+    color: var(--text);
 }
 
-/* ── Footer ── */
 footer {
-    background: #111;
+    background: var(--text);
     text-align: center;
     padding: 22px;
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.28);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.35);
+    letter-spacing: 0.02em;
 }
