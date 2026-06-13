@@ -106,6 +106,22 @@
     font-weight: 500;
 }
 
+.case-blog-link {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1px;
+    transition: border-color 0.2s ease;
+}
+
+.case-blog-link:hover {
+    border-color: var(--text);
+}
+
 @media (max-width: 768px) {
     .cases-grid {
         grid-template-columns: 1fr;
