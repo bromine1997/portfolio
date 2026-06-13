@@ -174,3 +174,150 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* ── Main Project Card (STAR structure, full-width) ── */
+.project-card-main {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.project-card-main:hover {
+    border-color: var(--text);
+    box-shadow: var(--shadow-hover);
+}
+
+.pcm-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+    gap: 16px;
+}
+
+.pcm-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin: 8px 0 4px;
+}
+
+.pcm-links {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+    align-items: flex-start;
+}
+
+.pcm-body {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 36px;
+}
+
+.pcm-section {
+    margin-bottom: 20px;
+}
+
+.pcm-section-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--text-soft);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.pcm-text {
+    font-size: 13.5px;
+    color: var(--text-muted);
+    line-height: 1.75;
+}
+
+.pcm-action {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.pcm-action li {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    padding-left: 14px;
+    position: relative;
+}
+
+.pcm-action li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--text-soft);
+}
+
+.pcm-action li strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.pcm-results {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.pcm-result {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.pcm-result-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.04em;
+    line-height: 1;
+}
+
+.pcm-result-unit {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 2px;
+}
+
+.pcm-result-note {
+    font-size: 11px;
+    color: var(--text-soft);
+    margin-top: 1px;
+}
+
+@media (max-width: 900px) {
+    .pcm-body {
+        grid-template-columns: 1fr;
+    }
+
+    .pcm-results {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .pcm-header {
+        flex-direction: column;
+    }
+}

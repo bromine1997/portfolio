@@ -7,8 +7,8 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23111111'/><text x='50' y='72' font-size='62' text-anchor='middle' font-family='sans-serif' font-weight='bold' fill='%23ffffff'>S</text></svg>">
 
     <!-- SEO -->
-    <meta name="description" content="하드웨어와 소프트웨어를 함께 다루는 임베디드/펌웨어 개발자 서보민의 포트폴리오. STM32, ESP32, ATmega, Android IoT, PID 제어, 의료기기 시스템 개발 경험.">
-    <meta name="keywords" content="펌웨어, 임베디드, 개발자, STM32, ESP32, ATmega, IoT, PID, Android, 서보민">
+    <meta name="description" content="하드웨어와 소프트웨어를 함께 다루는 임베디드/펌웨어 개발자 서보민의 포트폴리오. 솔레노이드 전력 66% 절감, PID 0.67% overshoot, 식약처 9항목 검증.">
+    <meta name="keywords" content="펌웨어, 임베디드, 개발자, STM32, ESP32, ATmega, IoT, PID, Android, 서보민, DRV110, HBOT">
     <meta name="author" content="서보민 (Seo Bo Min)">
 
     <!-- Open Graph -->
@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/experience.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/problem-solving.css">
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
@@ -39,8 +40,8 @@
         <li><a href="#profile">Profile</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#problem-solving">Problem Solving</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
@@ -96,11 +97,25 @@
         </div>
         <div class="about-section reveal">
             <div class="about-catchphrase">코드가 아니라 시스템을 만드는 개발자입니다.</div>
+            <div class="about-metrics">
+                <div class="about-metric">
+                    <span class="metric-value">66%</span>
+                    <span class="metric-label">솔레노이드 전력 절감</span>
+                </div>
+                <div class="about-metric">
+                    <span class="metric-value">0.67%</span>
+                    <span class="metric-label">PID overshoot (3기압)</span>
+                </div>
+                <div class="about-metric">
+                    <span class="metric-value">9항목</span>
+                    <span class="metric-label">식약처 검증</span>
+                </div>
+            </div>
             <div class="about-body">
                 <p>하드웨어와 소프트웨어를 함께 다루는 임베디드 개발자 서보민입니다.<br>
                 센서 데이터를 읽고, 제어 로직이 동작하고, 제가 만든 시스템이 실제 장치에서 움직일 때 가장 즐겁습니다.</p>
-                <p>석사 과정에서는 IoT 기반 고압산소치료기 시스템을 개발하며 센서 인터페이스, 제어 로직, 데이터 수집 시스템을 직접 구현했습니다.
-                센서 오류, 통신 문제, 제어 안정성 같은 문제를 하나씩 수정하며 시스템을 완성했습니다.</p>
+                <p>석사 과정에서는 IoT 기반 고압산소치료기 시스템을 단독 개발하며 회로 설계, 펌웨어, 서버, 앱까지 전 스택을 직접 구현했습니다.
+                데이터시트를 근거로 결정을 내리고, 오실로스코프로 원인을 찾고, 수치로 결과를 증명하는 방식으로 문제를 해결했습니다.</p>
             </div>
         </div>
     </div>
@@ -189,28 +204,11 @@
                 </div>
                 <ul class="exp-bullets">
                     <li>의공학부 수업 조교 (디지털 시스템, 헬스케어 계측의 이해, IoT 임베디드 시스템)</li>
-                    <li>코끼리 재활자전거 IoT 시스템 개발 (ESP32 Feather V2, ADS1232, 로드셀 데이터 수집, WebSocket)</li>
-                    <li>IoT 고압산소챔버 하드웨어 설계 (압력·온도·산소·CO₂·습도 센서, MAX1032 SPI ADC, ADUM1400 Isolation 회로)</li>
-                    <li>비례제어 밸브 SPI 제어 (AD5420 DAC Daisy Chain, 4-20mA 출력) 및 솔레노이드 밸브 구동 (DRV110)</li>
-                    <li>PID 알고리즘으로 챔버 가압·감압 정밀 제어</li>
-                    <li>Android 앱·NestJS+MongoDB 서버·Vue.js 3 웹 개발 (JWT 인증, RBAC, WebSocket 실시간 통신)</li>
+                    <li>IoT 고압산소챔버 시스템 단독 개발 — 전원 설계부터 회로·펌웨어·서버·앱까지 전 스택 담당</li>
+                    <li>코끼리 재활자전거 IoT 시스템 개발 — ADS1232 24bit ADC 4채널 동기 수집, WebSocket 전송</li>
                     <li>식품의약품안전처 도기준 시스템 성능 검증 완료 (가압속·환기성능·응급배기밸브 등 9개 항목)</li>
+                    <li>전자공학회 구두 발표 (2024)</li>
                 </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ── EDUCATION ── -->
-<section id="education">
-    <div class="container">
-        <div class="section-heading reveal">Education</div>
-        <div class="exp-item reveal">
-            <div class="exp-date">2023.03 — 2025.02</div>
-            <div class="exp-content">
-                <h3>의공학 석사</h3>
-                <div class="position">연세대학교 미래캠퍼스 · 의용컴퓨터 시스템 연구실</div>
-                <p>IoT 기술을 활용한 안드로이드 OS 기반 고압산소챔버 제어 및 모니터링 시스템 개발을 석사 논문 주제로 수행하였습니다. Tinker Board 2S(SBC) 기반 중앙 제어 시스템, PID 압력 제어 알고리즘, 안드로이드 애플리케이션, NestJS 서버, Vue.js 웹 애플리케이션까지 전체 시스템 스택을 설계 및 개발하였습니다.</p>
             </div>
         </div>
         <div class="exp-item reveal">
@@ -218,7 +216,9 @@
             <div class="exp-content">
                 <h3>의료시스템공학 학사</h3>
                 <div class="position">연세대학교 미래캠퍼스</div>
-                <p>전자회로, 인체생리학, 마이크로컴퓨터, 의용계측, 재활공학 등의 핵심 교과목을 이수하며 의공학 기초를 탄탄히 쌓았습니다. 하드웨어와 소프트웨어를 아우르는 융합적 사고를 키울 수 있었습니다.</p>
+                <ul class="exp-bullets">
+                    <li>전자회로, 마이크로컴퓨터, 의용계측, 재활공학 등 핵심 교과목 이수</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -232,57 +232,123 @@
         <!-- Research Projects -->
         <div class="projects-category">
             <div class="category-label">Research Projects</div>
-            <div class="project-cards">
 
-                <div class="project-card reveal">
-                    <a href="https://github.com/bromine1997/HbotChamberApp" target="_blank" class="project-card-image">
-                        <img src="images/projects/hbot.png" alt="IoT 기반 고압산소치료기(HBOT) 시스템 프로젝트"
-                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="project-card-image-placeholder">No Image</div>
-                    </a>
-                    <div class="project-card-body">
+            <!-- HBOT - STAR -->
+            <div class="project-card-main reveal">
+                <div class="pcm-header">
+                    <div>
                         <div class="project-card-badge">석사 논문 · 의료기기 IoT 시스템</div>
-                        <div class="project-card-title">IoT 기반 고압산소치료기 (HBOT)</div>
-                        <div class="project-card-date">2023.03 — 2025.02 · 연세대학교 연구실</div>
-                        <div class="project-card-desc">
-                            풀스택 시스템 설계 및 개발. 압력·온도·산소·CO₂·습도 센서 통합, PID 알고리즘 가압·감압 정밀 제어. 식약처 기준 9개 항목 성능 검증 완료.
+                        <div class="pcm-title">IoT 기반 고압산소치료기 (HBOT)</div>
+                        <div class="project-card-date">2023.03 — 2025.02 · 연세대학교 연구실 · 단독 개발</div>
+                    </div>
+                    <div class="pcm-links">
+                        <a href="https://github.com/bromine1997/HbotChamberApp" target="_blank" class="project-card-link">Android 앱</a>
+                        <a href="https://github.com/bromine1997/tinkerboard-test" target="_blank" class="project-card-link">서버 코드</a>
+                    </div>
+                </div>
+                <div class="pcm-body">
+                    <div class="pcm-left">
+                        <div class="pcm-section">
+                            <div class="pcm-section-label">Situation</div>
+                            <p class="pcm-text">기존 HBOT는 병원 전용 고가 장비 — 원격 관리 불가, 의료진 상주 필수, 높은 도입 비용으로 개인 운용 불가능. 연구실에서 소형 HBOT를 직접 운용하려면 풀스택 제어 시스템이 필요했다.</p>
+                        </div>
+                        <div class="pcm-section">
+                            <div class="pcm-section-label">핵심 설계 결정</div>
+                            <ul class="pcm-action">
+                                <li><strong>Android on Tinker Board 2S (MRAA)</strong> — Java에서 GPIO·SPI 직접 제어, 제어·UI·통신 단일 환경 통합</li>
+                                <li><strong>전원 설계: 스위칭 + LDO 조합</strong> — 24V→5V LDO 시 9.5W 손실 → VR10S05 스위칭, 5V→3.3V는 MIC5233 LDO</li>
+                                <li><strong>절연 3종</strong> — SPI(ADUM1400/1200), UART(ISO7421), EN 신호(VO1400AEFTR 포토커플러) → 의료용 SMPS ↔ SBC GND 완전 분리</li>
+                                <li><strong>DRV110 Peak-and-Hold</strong> — RSENSE=1Ω, RPEAK=200kΩ, RHOLD=100kΩ, CKEEP=220nF 직접 계산 → 14W→4.8W</li>
+                                <li><strong>2채널 독립 PID + Setpoint Tracking</strong> — 가압·감압 방향별 응답 특성 분리, 비례 제어 밸브(AD5420 4-20mA) 연동</li>
+                            </ul>
                         </div>
                         <div class="project-card-stack">
                             <span>C</span><span>Java</span><span>ATmega4809</span>
+                            <span>AD5420</span><span>DRV110</span><span>ADUM1400</span>
                             <span>SPI / UART</span><span>PID</span>
                             <span>NestJS</span><span>MongoDB</span><span>Vue.js 3</span>
                         </div>
-                        <div class="project-card-links">
-                            <a href="https://github.com/bromine1997/HbotChamberApp" target="_blank" class="project-card-link">Android 앱</a>
-                            <a href="https://github.com/bromine1997/tinkerboard-test" target="_blank" class="project-card-link">서버 코드</a>
+                    </div>
+                    <div class="pcm-right">
+                        <div class="pcm-section-label">Result</div>
+                        <div class="pcm-results">
+                            <div class="pcm-result">
+                                <span class="pcm-result-value">66%</span>
+                                <span class="pcm-result-unit">솔레노이드 전력 절감</span>
+                                <span class="pcm-result-note">14W → 4.8W (DRV110)</span>
+                            </div>
+                            <div class="pcm-result">
+                                <span class="pcm-result-value">0.67%</span>
+                                <span class="pcm-result-unit">PID overshoot</span>
+                                <span class="pcm-result-note">3기압 Step Function</span>
+                            </div>
+                            <div class="pcm-result">
+                                <span class="pcm-result-value">9항목</span>
+                                <span class="pcm-result-unit">식약처 검증</span>
+                                <span class="pcm-result-note">가압속·환기·응급배기 등</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="project-card reveal">
-                    <a href="https://github.com/bromine1997/RehabilitationBicycle" target="_blank" class="project-card-image">
-                        <img src="images/projects/elephant-bike.png" alt="코끼리 재활자전거 IoT 시스템 프로젝트"
-                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="project-card-image-placeholder">No Image</div>
-                    </a>
-                    <div class="project-card-body">
+            <!-- Rehab Bicycle - STAR -->
+            <div class="project-card-main reveal">
+                <div class="pcm-header">
+                    <div>
                         <div class="project-card-badge">재활공학 IoT 시스템</div>
-                        <div class="project-card-title">코끼리 재활자전거 IoT</div>
-                        <div class="project-card-date">2023.03 — 2025.02 · 연세대학교 연구실</div>
-                        <div class="project-card-desc">
-                            ESP32 Feather V2 기반 IoT 시스템 개발. ADS1232 24-bit ADC로 4채널 힘 센서(로드셀) 동기 수집. WebSocket으로 실시간 모니터링 서버 전송.
+                        <div class="pcm-title">코끼리 재활자전거 IoT</div>
+                        <div class="project-card-date">2023.03 — 2025.02 · 연세대학교 연구실 · 단독 개발</div>
+                    </div>
+                    <div class="pcm-links">
+                        <a href="https://github.com/bromine1997/RehabilitationBicycle" target="_blank" class="project-card-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="pcm-body">
+                    <div class="pcm-left">
+                        <div class="pcm-section">
+                            <div class="pcm-section-label">Situation</div>
+                            <p class="pcm-text">재활 치료 전문 인력 부족, 표준 프로토콜 의존 → 치료 세션 중 실시간 힘·각도 측정 불가, 환자별 데이터 누적 불가. 연구용 수준의 정밀도가 필요했다.</p>
+                        </div>
+                        <div class="pcm-section">
+                            <div class="pcm-section-label">핵심 설계 결정</div>
+                            <ul class="pcm-action">
+                                <li><strong>ADS1232 24bit ADC × 4</strong> — ESP32 내장 ADC(12bit, ±5%, 차동 불가) 기각, 연구용 정밀도 확보</li>
+                                <li><strong>외부 4.9152MHz 오실레이터 + ISR 동기화</strong> — HW SPI 기각(25ms 위상 오차), SCLK Falling Edge ISR로 4핀 동시 읽기</li>
+                                <li><strong>PSRAM ps_calloc (1.65MB 버퍼)</strong> — 내부 SRAM Wi-Fi 점유 → OOM 크래시 방지</li>
+                                <li><strong>PCB 2차 재설계</strong> — ADS1232 대칭 배치, 배선 길이 균일화 → 채널 간 노이즈 편차 감소</li>
+                                <li><strong>IRAM_ATTR ISR</strong> — SPIFFS 읽기 시 Flash 캐시 무효화 → ISR 크래시 방지</li>
+                            </ul>
                         </div>
                         <div class="project-card-stack">
                             <span>C</span><span>C++</span><span>ESP32</span>
-                            <span>ADS1232</span><span>SPI</span><span>WebSocket</span>
+                            <span>ADS1232</span><span>AS5600</span>
+                            <span>PSRAM</span><span>ISR</span><span>WebSocket</span>
                         </div>
-                        <div class="project-card-links">
-                            <a href="https://github.com/bromine1997/RehabilitationBicycle" target="_blank" class="project-card-link">GitHub</a>
+                    </div>
+                    <div class="pcm-right">
+                        <div class="pcm-section-label">Result</div>
+                        <div class="pcm-results">
+                            <div class="pcm-result">
+                                <span class="pcm-result-value">4ch</span>
+                                <span class="pcm-result-unit">동기 수집</span>
+                                <span class="pcm-result-note">40 SPS, 위상 오차 최소화</span>
+                            </div>
+                            <div class="pcm-result">
+                                <span class="pcm-result-value">36분</span>
+                                <span class="pcm-result-unit">연속 기록</span>
+                                <span class="pcm-result-note">데이터 손실 없음</span>
+                            </div>
+                            <div class="pcm-result">
+                                <span class="pcm-result-value">발표</span>
+                                <span class="pcm-result-unit">전자공학회</span>
+                                <span class="pcm-result-note">구두 발표 (2024)</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
 
         <!-- Side Projects -->
@@ -339,6 +405,113 @@
             </div>
         </div>
 
+    </div>
+</section>
+
+<!-- ── PROBLEM SOLVING ── -->
+<section id="problem-solving">
+    <div class="container">
+        <div class="section-heading reveal">Problem Solving</div>
+        <div class="cases-grid">
+
+            <!-- Case 1: DRV110 - Design Decision -->
+            <div class="case-card reveal">
+                <div class="case-type">
+                    <span class="case-type-dot"></span>
+                    Design Decision · 전원 설계
+                </div>
+                <div class="case-title">솔레노이드 구동 전력 66% 절감 — DRV110 Peak-and-Hold</div>
+                <div class="case-row">
+                    <span class="case-label">문제</span>
+                    <span class="case-content">솔밸브 2개가 120분 세션 내내 ON → 14W 상시 소모, 코일 발열</span>
+                </div>
+                <div class="case-row">
+                    <span class="case-label">인사이트</span>
+                    <span class="case-content">Pull-in과 Hold의 전류 요구량이 다름 — 플런저가 붙은 뒤 유지는 정격의 1/3으로 충분</span>
+                </div>
+                <div class="case-row">
+                    <span class="case-label">해결</span>
+                    <span class="case-content">DRV110 + 저항값 직접 계산 (RSENSE=1Ω, RPEAK=200kΩ, RHOLD=100kΩ, CKEEP=220nF)</span>
+                </div>
+                <div class="case-result-badge">14W → 4.8W · 세션당 23.3Wh → 8.0Wh</div>
+                <div class="case-tags">
+                    <span class="case-tag">DRV110</span><span class="case-tag">솔레노이드</span><span class="case-tag">회로 설계</span><span class="case-tag">데이터시트</span>
+                </div>
+            </div>
+
+            <!-- Case 2: Power supply design - Design Decision -->
+            <div class="case-card reveal">
+                <div class="case-type">
+                    <span class="case-type-dot"></span>
+                    Design Decision · 전원 설계
+                </div>
+                <div class="case-title">스위칭 + LDO 조합과 3종 절연 설계</div>
+                <div class="case-row">
+                    <span class="case-label">문제</span>
+                    <span class="case-content">24V 입력에서 5V·3.3V 생성, 의료용 SMPS ↔ SBC 어댑터 GND 분리 필요</span>
+                </div>
+                <div class="case-row">
+                    <span class="case-label">판단</span>
+                    <span class="case-content">24V→5V LDO 시 9.5W 손실 → 스위칭(VR10S05) 채택. 5V→3.3V는 강하 작고 노이즈 민감 → LDO(MIC5233)</span>
+                </div>
+                <div class="case-row">
+                    <span class="case-label">절연</span>
+                    <span class="case-content">SPI: ADUM1400/1200 · UART: ISO7421 · EN 신호: VO1400AEFTR 포토커플러</span>
+                </div>
+                <div class="case-tags">
+                    <span class="case-tag">VR10S05</span><span class="case-tag">MIC5233</span><span class="case-tag">ADUM1400</span><span class="case-tag">포토커플러</span>
+                </div>
+            </div>
+
+            <!-- Case 3: SPI 파형 왜곡 - Troubleshooting -->
+            <div class="case-card reveal">
+                <div class="case-type">
+                    <span class="case-type-dot trouble"></span>
+                    Troubleshooting · SPI
+                </div>
+                <div class="case-title">SPI 파형 왜곡 — Digital Isolator 주파수 제한</div>
+                <div class="case-row">
+                    <span class="case-label">증상</span>
+                    <span class="case-content">SPI1 삼각파, SPI5 오실레이션 출력 — Bypass Cap 교체해도 무변화</span>
+                </div>
+                <div class="case-row">
+                    <span class="case-label">원인</span>
+                    <span class="case-content">ADUM1400 최대 주파수 10MHz (1000ns) — SPI 20MHz로 초과 설정</span>
+                </div>
+                <div class="case-row">
+                    <span class="case-label">해결</span>
+                    <span class="case-content">SPI1: 20MHz → 1MHz, SPI5: 20MHz → 50kHz</span>
+                </div>
+                <div class="case-tags">
+                    <span class="case-tag">ADUM1400</span><span class="case-tag">SPI</span><span class="case-tag">오실로스코프</span>
+                </div>
+            </div>
+
+            <!-- Case 4: AD5420 Daisy Chain - Troubleshooting -->
+            <div class="case-card reveal">
+                <div class="case-type">
+                    <span class="case-type-dot trouble"></span>
+                    Troubleshooting · SPI
+                </div>
+                <div class="case-title">AD5420 Daisy Chain 출력 불량 — shift register UNDEFINED</div>
+                <div class="case-row">
+                    <span class="case-label">증상</span>
+                    <span class="case-content">48bit 전송했는데 두 채널 출력 모두 0 — 레지스터·래치 타이밍 이상 없음</span>
+                </div>
+                <div class="case-row">
+                    <span class="case-label">원인</span>
+                    <span class="case-content">오실로스코프로 MISO 확인 → 첫 전송에 쓰레기값. 데이터시트 SDO 구간 "UNDEFINED" 명시 — 전원 인가 직후 shift register 초기값 미보장</span>
+                </div>
+                <div class="case-row">
+                    <span class="case-label">해결</span>
+                    <span class="case-content">6-byte NOP(0x00) dummy flush로 두 칩 shift register 초기화 후 명령 전송</span>
+                </div>
+                <div class="case-tags">
+                    <span class="case-tag">AD5420</span><span class="case-tag">Daisy Chain</span><span class="case-tag">오실로스코프</span>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
 
