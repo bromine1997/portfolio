@@ -254,7 +254,7 @@
                             <ul class="pcm-action">
                                 <li><strong>Android on Tinker Board 2S (MRAA)</strong> — Java에서 GPIO·SPI 직접 제어, 제어·UI·통신 단일 환경 통합</li>
                                 <li><strong>전원 설계: 스위칭 + LDO 조합</strong> — 24V→5V LDO 시 9.5W 손실 → VR10S05 스위칭, 5V→3.3V는 MIC5233 LDO</li>
-                                <li><strong>SPI · UART · EN 라인 절연 설계</strong> — ADUM1400/1200, ISO7421, VO1400AEFTR 포토커플러 → 의료용 SMPS ↔ SBC GND 완전 분리</li>
+                                <li><strong>SPI · UART · EN 라인 Isolation 설계</strong> — ADUM1400/1200, ISO7421, VO1400AEFTR 포토커플러 → 의료용 SMPS ↔ SBC GND 완전 분리</li>
                                 <li><strong>DRV110 Peak-and-Hold</strong> — 데이터시트 기반 소자 선정 (RSENSE=1Ω, RPEAK=200kΩ, RHOLD=100kΩ, CKEEP=220nF) → 14W→4.8W</li>
                                 <li><strong>2채널 독립 PID + Setpoint Tracking</strong> — 가압·감압 방향별 응답 특성 분리, 비례 제어 밸브(AD5420 4-20mA) 연동</li>
                             </ul>
@@ -442,7 +442,7 @@
                     <span class="case-type-inner"><span class="case-type-dot"></span>Design Decision · 전원 설계</span>
                     <a href="https://bromine1997.github.io/posts/basics/hbot-power-supply/" target="_blank" class="case-ext-link"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                 </div>
-                <div class="case-title">스위칭 + LDO 조합과 3종 절연 설계</div>
+                <div class="case-title">스위칭 + LDO 조합과 Isolation 설계</div>
                 <div class="case-row">
                     <span class="case-label">문제</span>
                     <span class="case-content">24V 입력에서 5V·3.3V 생성, 의료용 SMPS ↔ SBC 어댑터 GND 분리 필요</span>
@@ -452,7 +452,7 @@
                     <span class="case-content">24V→5V LDO 시 9.5W 손실 → 스위칭(VR10S05) 채택. 5V→3.3V는 강하 작고 노이즈 민감 → LDO(MIC5233)</span>
                 </div>
                 <div class="case-row">
-                    <span class="case-label">절연</span>
+                    <span class="case-label">Isolation</span>
                     <span class="case-content">SPI: ADUM1400/1200 · UART: ISO7421 · EN 신호: VO1400AEFTR 포토커플러</span>
                 </div>
                 <div class="case-tags">
